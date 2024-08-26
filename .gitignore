@@ -24,7 +24,6 @@ DerivedData
 
 # Android/IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
@@ -37,6 +36,7 @@ local.properties
 # node.js
 #
 node_modules/
+dist/
 npm-debug.log
 yarn-error.log
 

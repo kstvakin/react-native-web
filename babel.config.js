@@ -1,3 +1,15 @@
 module.exports = {
-  presets: ['module:@react-native/babel-preset'],
+  presets: ['module:metro-react-native-babel-preset'],
+  // Re-write paths to import only the modules needed by the app
+  plugins: [
+    'react-native-web',
+    [
+      'module-resolver',
+      {
+        alias: {
+          '^react-native$': 'react-native-web',
+        },
+      },
+    ],
+  ],
 };
